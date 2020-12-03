@@ -73,7 +73,7 @@ for d in range(len(dates)):
     lgd = ax2.legend(handles = leg,title = 'Daily Totals',bbox_to_anchor=(1.1,1))
     ax.set_xlim([td,tm])
     if pnum == daysper:
-        plt.savefig('Time Series ' + str(n) +'.png',bbox_extra_artists=(lgd,), bbox_inches='tight')
+        plt.savefig('Images/Time Series ' + str(n) +'.png',bbox_extra_artists=(lgd,), bbox_inches='tight')
         n = n + 1
 plt.draw()
 plt.show()

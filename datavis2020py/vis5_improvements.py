@@ -103,7 +103,7 @@ lgd = ax.legend(labels=labels,handles=hands,bbox_to_anchor = [1.1,1])
 ax.set_ylabel('Volume Water Used (gal)')
 plt.plot([0.5,0.5],[0,max(tots.loc['sum',:])+100],'k--',linewidth=3)
 plt.title('Difference in Total Volume of Water Used With Improvements (gal)')
-plt.savefig('Improvements Stacked Bar Diff.png',bbox_extra_artists=(lgd,), bbox_inches='tight')
+plt.savefig('Images/Improvements Stacked Bar Diff.png',bbox_extra_artists=(lgd,), bbox_inches='tight')
 plt.show()
 
 fig = plt.figure(figsize=[7,7])
@@ -137,6 +137,6 @@ lgd = ax.legend(labels=labels,handles=hands,bbox_to_anchor = [1.1,1])
 
 ax.set_ylabel('Volume Water Used (gal)')
 plt.title('Total Volume of Water Used With Improvements (gal)')
-plt.savefig('Improvements Stacked Bar.png',bbox_extra_artists=(lgd,), bbox_inches='tight')
+plt.savefig('Images/Improvements Stacked Bar.png',bbox_extra_artists=(lgd,), bbox_inches='tight')
 plt.show()
 

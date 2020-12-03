@@ -48,8 +48,8 @@ for t in tots.index:
         ea = eh
     else:
         c = 'none'
-        eh = 'cyan'
-        ea = 'magenta'
+        eh = 'deepskyblue'
+        ea = 'yellowgreen'
         bot = 0
         obot = 0
     h2 = ax.bar(x + (xs+0.02), ovals, bottom=obot, color=c, edgecolor=ea, width=xs * 2, linewidth=2)
@@ -72,5 +72,5 @@ lgd = ax.legend(labels=labs,handles=hands, bbox_to_anchor = [1.05,0.7])
 ax.set_ylabel('Volume Water Used (gal)')
 plt.title('Total Volume of Water Used by Type of Use\nCompared Between Building of Interest and Nearby Homes')
 plt.xticks(rotation=90)
-plt.savefig('Daily Stacked Bar Compare.png',bbox_extra_artists=(lgd,), bbox_inches='tight')
+plt.savefig('Images/Daily Stacked Bar Compare.png',bbox_extra_artists=(lgd,), bbox_inches='tight')
 plt.show()

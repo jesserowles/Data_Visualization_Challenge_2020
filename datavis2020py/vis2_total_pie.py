@@ -24,7 +24,7 @@ ax = fig.add_subplot(1,1,1)
 p=ax.pie(szeall,labels=laball, startangle=0,autopct='%1.1f%%',colors=clrall,pctdistance = 1.13,labeldistance=1.28)
 [p[0][i].set_alpha(0.5) for i in range(len(p[0]))]
 plt.title('Proportion of Cumulative Water Used by Type (Volume)')
-plt.savefig('Pie Water Use By Type.png')
+plt.savefig('Images/Pie Water Use By Type.png')
 plt.show()
 
 
@@ -36,5 +36,5 @@ ax = fig.add_subplot(1,1,1)
 p=ax.pie(szenir,labels=labnir, startangle=0,autopct='%1.1f%%',colors=clrnir,labeldistance=1.1)
 [p[0][i].set_alpha(0.5) for i in range(len(p[0]))]
 plt.title('Proportion of Cumulative Water Used by Type Without Irrigation (Volume)')
-plt.savefig('Pie Water Use No Irr.png')
+plt.savefig('Images/Pie Water Use No Irr.png')
 plt.show()
