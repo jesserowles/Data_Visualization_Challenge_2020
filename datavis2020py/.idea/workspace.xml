@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75e4b5f6-7920-4179-a7e3-97b90fa5a90f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Data Visualization Challenge 2020 JLR.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Visualization Challenge 2020 JLR.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Data_Dumps/WEAP/Flow Requirements/process_flow_requirements" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -90,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606685813507</updated>
-      <workItem from="1606685814882" duration="65840000" />
+      <workItem from="1606685814882" duration="73051000" />
     </task>
     <servers />
   </component>
