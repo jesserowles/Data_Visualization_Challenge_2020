@@ -3,6 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="75e4b5f6-7920-4179-a7e3-97b90fa5a90f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis1_timeser_events.py" beforeDir="false" afterPath="$PROJECT_DIR$/vis1_timeser_events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis2_total_pie.py" beforeDir="false" afterPath="$PROJECT_DIR$/vis2_total_pie.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis3_dayhist.py" beforeDir="false" afterPath="$PROJECT_DIR$/vis3_dayhist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis4_dailystackbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/vis4_dailystackbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis5_improvements.py" beforeDir="false" afterPath="$PROJECT_DIR$/vis5_improvements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis6_propstackbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/vis6_propstackbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis7_comparedailystackbar.py" beforeDir="false" afterPath="$PROJECT_DIR$/vis7_comparedailystackbar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vis8_comparehistogram.py" beforeDir="false" afterPath="$PROJECT_DIR$/vis8_comparehistogram.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +99,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606685813507</updated>
-      <workItem from="1606685814882" duration="73051000" />
+      <workItem from="1606685814882" duration="73891000" />
+      <workItem from="1607389502675" duration="3923000" />
     </task>
     <servers />
   </component>
@@ -102,7 +112,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

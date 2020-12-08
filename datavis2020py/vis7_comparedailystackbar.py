@@ -4,12 +4,20 @@ import pandas as pd
 import datetime as dt
 import numpy as np
 
+#this script creates a new dataset based on given dataset to compare
+# the home given to the new dataset, intended to be fake data representative
+# of other nearby homes
+
 raw, evn, mf, tdc = read_data()
 evn.index = evn['start']
 
+#initialize totals dataset
 tots = pd.DataFrame({'col':tdc[2]})
 tots.index = tdc[0]
+#initialize totals dataset containing 'nearby' homes
 othertots = tots.copy()
+
+#loop through dates to calculate totals
 dates = evn['start'].map(lambda t: t.date()).unique()
 for i in dates:
     ct = i.strftime('%b-%d')
@@ -19,6 +27,7 @@ for i in dates:
     totyp = evnbt.groupby('label').sum()['vol']
     tots.loc[totyp.index, ct] = totyp
 
+    #make up nearby homes data by multiplying homes data by some value likely less than 1
     othertots[ct] = 0
     for t in totyp.index:
         newval = 0
@@ -26,8 +35,11 @@ for i in dates:
             newval = totyp.loc[t]*np.random.normal(loc=0.7,scale=0.2)
         othertots.loc[t, ct] = newval
 
+#get rid of irrigation
 tots = tots.drop('irrigation')
 othertots = othertots.drop('irrigation')
+
+#plot stacked bar charts for both types next to each other
 labels = pd.DatetimeIndex(dates).strftime('%a %b %d')
 fig = plt.figure(figsize = [13,6])
 ax = fig.add_subplot(1,1,1)
@@ -42,19 +54,20 @@ othertots.loc['sum'] = othertots.sum()
 for t in tots.index:
     vals = tots.loc[t,:].values[1:]
     ovals = othertots.loc[t,:].values[1:]
-    if t != 'sum':
+    if t != 'sum': #plot each type of water use individually
         c = evn.loc[evn['label'] == t, 'col'][0]
         eh = 'none'
         ea = eh
-    else:
+    else: #only plot outlines on total height of bar
         c = 'none'
-        eh = 'deepskyblue'
-        ea = 'yellowgreen'
+        eh = 'deepskyblue' #outline color for home of interest
+        ea = 'yellowgreen' #outline color for all other homes
         bot = 0
         obot = 0
     h2 = ax.bar(x + (xs+0.02), ovals, bottom=obot, color=c, edgecolor=ea, width=xs * 2, linewidth=2)
     h1 = ax.bar(x-(xs+0.02),vals,bottom=bot,color=c,edgecolor=eh,label=t, width = xs*2,linewidth=2)
 
+    #keep track for legend
     if t != 'sum':
         hands.append(h1)
         labs.append(t)
