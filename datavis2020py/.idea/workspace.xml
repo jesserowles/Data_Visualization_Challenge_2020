@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75e4b5f6-7920-4179-a7e3-97b90fa5a90f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Data Visualization Challenge 2020 JLR.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../Data Visualization Challenge 2020 JLR.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="75e4b5f6-7920-4179-a7e3-97b90fa5a90f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +92,7 @@
       <workItem from="1607389502675" duration="4176000" />
       <workItem from="1607396165517" duration="4000" />
       <workItem from="1607445435581" duration="17000" />
-      <workItem from="1607610455592" duration="3734000" />
+      <workItem from="1607610455592" duration="4331000" />
     </task>
     <servers />
   </component>
